@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nama & NPM</title>
   </head>
   <body>
     <p>Nama : Agia Vibra Pramesta Drajat</p>
