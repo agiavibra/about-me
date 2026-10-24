@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya | Agia Vibra Pramesta Drajat</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0b1724;
+            color: white;
+        }
+
+        header {
+            background-color: #10263a;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #42a5ff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #42a5ff;
+        }
+
+        .judul {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #10263a, #0b1724);
+        }
+
+        .judul h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .judul h1 span {
+            color: #42a5ff;
+        }
+
+        .judul p {
+            color: #b7c5d2;
+            font-size: 16px;
+        }
+        
+       .profil {
+            display: flex !important;
+            flex-direction: row !important; 
+            align-items: center !important;
+            gap: 40px !important;
+            flex-wrap: nowrap !important;
+        }
+
+        .foto {
+            flex: 0 0 350px !important;
+             max-width: 350px !important;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid #28445c;
+        }
+
+         .deskripsi {
+            flex: 1 !important;
+        }
+
+        .deskripsi h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .deskripsi h2 span {
+            color: #42a5ff;
+        }
+
+        .deskripsi p {
+            color: #c5d0dc;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .informasi {
+            padding: 40px 8% 70px;
+            text-align: center;
+        }
+
+        .informasi h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .informasi h2 span {
+            color: #42a5ff;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .info-card {
+            background-color: #142b40;
+            border: 1px solid #28445c;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: #42a5ff;
+        }
+
+        .info-card h3 {
+            color: #42a5ff;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #c5d0dc;
+            line-height: 1.7;
+        }
+
+        .motto {
+            background-color: #10263a;
+            text-align: center;
+            padding: 45px 8%;
+        }
+
+        .motto h2 {
+            color: #42a5ff;
+            margin-bottom: 15px;
+        }
+
+        .motto p {
+            color: #d7e1eb;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #07121e;
+            text-align: center;
+            padding: 22px;
+            color: #b7c5d2;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .judul h1 {
+                font-size: 32px;
+            }
+
+            .profil {
+                flex-direction: column;
+                padding-top: 40px;
+                gap: 30px;
+            }
+
+            .foto {
+                width: 100%;
+                max-width: 350px;
+                overflow: visible;
+            }
+
+            .foto img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                border-radius: 12px;
+                display: block;
+            }
+
+            .deskripsi h2 {
+                font-size: 26px;
+            }
+
+            .info-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="../img/logo-baru.jpg" alt="Logo AV" style="height: 40px; width: 40px; border-radius: 50%;">
+        </a>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html" class="active">Tentang Saya</a>
+            <a href="hobi.html">Hobi</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="judul">
+        <h1>Tentang <span>Saya</span></h1>
+        <p>Mengenal lebih dekat Agia Vibra Pramesta Drajat.</p>
+    </section>
+
+    <section class="profil" style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; flex-wrap: nowrap; justify-content: center;">
+
+         <div class="foto" style="flex: 0 0 300px; width: 300px;">
+            <img src="../img/saya.jpg" alt="foto" style="width: 100%; height: 400px; object-fit: cover; object-position: top center; border-radius: 12px; display: block;">
+        </div>
+
+        <div class="deskripsi">
+            <h2>Halo, Saya <span>Agia Vibra!</span></h2>
+
+            <p>
+                Perkenalkan, nama saya Agia Vibra Pramesta Drajat.
+                Ini adalah website personal saya yang berisi
+                informasi tentang diri saya dan kegiatan yang saya sukai.
+            </p>
+
+            <p>
+                Saya memiliki hobi memancing dan touring motor.
+                Bagi saya, memancing merupakan kegiatan yang
+                menyenangkan karena dapat melatih kesabaran
+                sekaligus menikmati ketenangan alam.
+            </p>
+
+            <p>
+                Selain itu, saya juga senang touring menggunakan
+                sepeda motor. Saya menikmati perjalanan, melihat
+                pemandangan baru, dan mendapatkan pengalaman
+                menarik dari setiap tempat yang dikunjungi.
+            </p>
+
+            <p>
+                Melalui website ini, saya ingin berbagi cerita
+                mengenai hobi, pengalaman, dan hal-hal menarik
+                dalam kehidupan sehari-hari saya.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="informasi">
+
+        <h2>Informasi <span>Pribadi</span></h2>
+
+        <div class="info-container">
+
+            <div class="info-card">
+                <h3>👤 Data Pribadi</h3>
+                <p>Agia Vibra Pramesta Drajat</p>
+                <p>06 Agustus 2001</p>
+                <p>Jl.Suryalaya Sari No.7</p>
+                <p>0831-0410-0582</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🎣 Hobi Memancing</h3>
+                <p>
+                    Menikmati waktu di alam, melatih kesabaran,
+                    dan mencari pengalaman memancing yang seru.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>🏍️ Hobi Touring</h3>
+                <p>
+                    Menjelajahi jalanan, menikmati pemandangan,
+                    dan mengunjungi tempat-tempat baru.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>🌟 Kepribadian</h3>
+                <p>
+                    Senang mencoba hal baru, menghargai pengalaman,
+                    dan menikmati waktu bersama alam.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="motto">
+        <h2>Motto Hidup</h2>
+        <p>
+            "Nikmati setiap perjalanan, hargai setiap proses,
+            dan jadikan setiap pengalaman sebagai cerita."
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 Agia Vibra Pramesta Drajat |
+            Personal Website
+        </p>
+    </footer>
+
+</body>
+</html>
