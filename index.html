@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Agia Vibra Pramesta Drajat</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1724;
+            color: white;
+        }
+
+       header {
+            background-color: #10263a;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #42a5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #42a5ff;
+        }
+
+        .beranda {
+            min-height: 80vh;
+            padding: 80px 7%;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(5, 15, 27, 0.95),
+                    rgba(5, 15, 27, 0.35)
+                ),
+                url("../img/alam1.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .konten {
+            max-width: 650px;
+        }
+
+        .konten h3 {
+            color: #42a5ff;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .konten h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .konten p {
+            color: #d0d9e3;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .tombol {
+            display: inline-block;
+            padding: 13px 25px;
+            background-color: #42a5ff;
+            color: #071522;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .tombol:hover {
+            background-color: white;
+        }
+
+        .hobi {
+            padding: 50px 7%;
+            text-align: center;
+        }
+
+        .hobi h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .hobi > p {
+            color: #b7c5d2;
+            margin-bottom: 30px;
+        }
+
+        .kartu-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .kartu {
+            background-color: #142b40;
+            padding: 30px;
+            border-radius: 12px;
+            width: 280px;
+            border: 1px solid #294158;
+        }
+
+        .kartu .ikon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .kartu h3 {
+            margin-bottom: 10px;
+            color: #42a5ff;
+        }
+
+        .kartu p {
+            color: #c5d0dc;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #10263a;
+            text-align: center;
+            padding: 22px;
+            color: #b7c5d2;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .konten h1 {
+                font-size: 35px;
+            }
+
+            .konten p {
+                font-size: 15px;
+            }
+
+            .beranda {
+                min-height: 70vh;
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+            <a href="#" class="logo">
+                <img src="../img/logo-baru.jpg" alt="Logo AV" style="height: 40px; width: 40px; border-radius: 50%;">
+            </a>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Saya</a>
+            <a href="hobi.html">Hobi</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="beranda">
+        <div class="konten">
+            <h3>SELAMAT DATANG DI WEBSITE SAYA</h3>
+
+            <h1>
+                Agia Vibra<br>
+                Pramesta Drajat
+            </h1>
+
+            <p>
+                Halo! Saya Agia Vibra Pramesta Drajat.
+                Saya memiliki hobi memancing dan touring motor.
+                Saya senang menikmati keindahan alam, menjelajahi
+                tempat baru, dan mendapatkan pengalaman menarik
+                dalam setiap perjalanan.
+            </p>
+
+            <a href="tentang.html" class="tombol">
+                Kenali Saya →
+            </a>
+        </div>
+    </section>
+
+    <section class="hobi">
+        <h2>Hobi Saya</h2>
+
+        <p>
+            Dua kegiatan favorit yang membuat hari saya lebih berwarna.
+        </p>
+
+        <div class="kartu-container">
+
+            <div class="kartu">
+                <div class="ikon">🎣</div>
+                <h3>Memancing</h3>
+                <p>
+                    Menikmati ketenangan alam, melatih kesabaran,
+                    dan menghabiskan waktu di tempat yang indah.
+                </p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🏍️</div>
+                <h3>Touring Motor</h3>
+                <p>
+                    Menjelajahi jalan baru, menikmati pemandangan,
+                    dan mengumpulkan cerita dari setiap perjalanan.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 Agia Vibra Pramesta Drajat.
+            Semua Hak Dilindungi.
+        </p>
+    </footer>
+
+</body>
+</html>
