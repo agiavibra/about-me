@@ -73,15 +73,17 @@
         
        .profil {
             display: flex !important;
-            flex-direction: row !important; 
+            flex-direction: row !important;
             align-items: center !important;
-            gap: 40px !important;
-            flex-wrap: nowrap !important;
+            gap: 30px !important; /* tambah ini */
+            padding: 20px 30px !important; /* tambah ini biar nggak mepet layar */
         }
-
+        
         .foto {
             flex: 0 0 350px !important;
-             max-width: 350px !important;
+            max-width: 350px !important;
+            margin-left: 25px;  /* ini jarak dari pinggir kiri */
+            margin-right: 15px;
         }
 
         .foto img {
@@ -89,7 +91,8 @@
             height: 400px;
             object-fit: cover;
             border-radius: 15px;
-            border: 2px solid #28445c;
+            border: 3px solid #28445c;
+            box-sizing: border-box;
         }
 
          .deskripsi {
