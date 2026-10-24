@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Agia Vibra Pramesta Drajat</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1120;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #10263a;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header h2 {
+            color: #38bdf8;
+            font-size: 22px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px 35px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 20px 70px;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 25px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background-color: #111c33;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #243450;
+        }
+
+        h2.section-title {
+            color: #38bdf8;
+            margin-bottom: 20px;
+            font-size: 23px;
+        }
+
+        .info-item {
+            margin-bottom: 22px;
+        }
+
+        .info-item h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #e2e8f0;
+        }
+
+        .info-item p,
+        .info-item a {
+            color: #94a3b8;
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .info-item a {
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            color: #38bdf8;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+            color: #e2e8f0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background-color: #0b1120;
+            color: #f1f5f9;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #38bdf8;
+        }
+
+        .contact-form textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0284c7;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+        }
+
+        .note {
+            color: #94a3b8;
+            font-size: 12px;
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px 15px;
+            background-color: #111c33;
+            border-top: 1px solid #243450;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Agia Vibra</h2>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="hobi.html">Hobi</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hubungi <span>Saya</span></h1>
+        <p>
+            Terima kasih sudah mengunjungi website pribadi saya.
+            Silakan hubungi saya atau kirim pesan melalui formulir di bawah ini.
+        </p>
+    </section>
+
+    <main class="container">
+        <div class="contact-wrapper">
+
+            <section class="contact-info">
+                <h2 class="section-title">Informasi Kontak</h2>
+
+                <div class="info-item">
+                    <h3>Nama</h3>
+                    <p>Agia Vibra Pramesta Drajat</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>agiavibra04@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Hobi</h3>
+                    <p>Memancing dan touring motor</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Media Sosial</h3>
+                    <p>Instagram : agia_vibra_01</p>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2 class="section-title">Kirim Pesan</h2>
+
+                <form id="contactForm">
+                    <label for="nama">Nama Lengkap</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama kamu"
+                        required
+                    >
+
+                    <label for="email">Alamat Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nama@email.com"
+                        required
+                    >
+
+                    <label for="subjek">Subjek</label>
+                    <input
+                        type="text"
+                        id="subjek"
+                        name="subjek"
+                        placeholder="Masukkan subjek pesan"
+                        required
+                    >
+
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Tulis pesan kamu di sini..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn">
+                        Kirim Pesan
+                    </button>
+
+                    <p class="note">
+                        Formulir ini akan membuka aplikasi email kamu
+                        untuk mengirim pesan.
+                    </p>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Agia Vibra Pramesta Drajat.
+            Dibuat dengan HTML dan CSS.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                const nama = document.getElementById("nama").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const subjek = document.getElementById("subjek").value.trim();
+                const pesan = document.getElementById("pesan").value.trim();
+
+                const emailTujuan = "emailkamu@example.com";
+
+                const isiPesan =
+                    "Nama: " + nama + "\n" +
+                    "Email pengirim: " + email + "\n\n" +
+                    pesan;
+
+                const mailto =
+                    "mailto:" + emailTujuan +
+                    "?subject=" + encodeURIComponent(subjek) +
+                    "&body=" + encodeURIComponent(isiPesan);
+
+                window.location.href = mailto;
+            }
+        );
+    </script>
+
+</body>
+</html>
